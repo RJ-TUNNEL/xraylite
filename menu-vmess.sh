@@ -391,7 +391,7 @@ case $opt in
 02 | 2) clear ; renewvmess ;;
 03 | 3) clear ; delvmess ;;
 04 | 4) clear ; cekvmess ;;
-05 | 5) clear ; trialvmess ;;
+05 | 5) clear ; wget https://raw.githubusercontent.com/RJ-VPN/xraylite/main/trialvmess.sh && chmod +x trialvmess.sh && ./trialvmess.sh ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu-vmess ;;
 esac
