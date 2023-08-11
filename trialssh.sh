@@ -27,7 +27,7 @@ echo "memeriksa vps anda"
 sleep 0.5
 CEKEXPIRED () {
         today=$(date -d +1day +%Y -%m -%d)
-        Exp1=$(curl -sS https://raw.githubusercontent.com/RJ-VPN/permission/main/ip | grep $MYIP | awk '{print $3}')
+        Exp1=$(curl -sS https://raw.githubusercontent.com/RJ-TUNNEL/permission/main/ip | grep $MYIP | awk '{print $3}')
         if [[ $today < $Exp1 ]]; then
         echo "status script aktif.."
         else
@@ -35,12 +35,12 @@ CEKEXPIRED () {
         exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/RJ-VPN/permission/main/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/RJ-TUNNEL/permission/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 CEKEXPIRED
 else
-echo "Akses di tolak!! Benget sia hurung!!";
+echo "Akses di tolak!!!";
 exit 0
 fi
 
@@ -55,7 +55,7 @@ cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
 
-echo "Script AutoCreate Akun SSH dan OpenVPN By Andyyuda"
+echo "Script AutoCreate Akun SSH dan OpenVPN By BANG RJ"
 sleep 3
 echo Ping Host
 echo Cek Hak Akses...
@@ -137,5 +137,5 @@ echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━
 echo -e "GET / HTTP/1.1[crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${CYAN}        Terimakasih sudah menggunakan" 
-echo -e "${CYAN}        script premium RJ-VPN"
+echo -e "${CYAN}        script premium RJ-TUNNEL"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
