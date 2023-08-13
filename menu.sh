@@ -286,6 +286,7 @@ echo -e " ${BICyan}[${BIWhite} X ${BICyan}] TYPE X FOR EXIT ${BICyan}${BIYellow}
 echo -e " ${RED}"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e " ${BICyan}[${BIWhite}23${BICyan}]${RED} •${NC} ${YELLOW}UDP ${GREEN}INSTALL $NC"
+echo -e " ${BICyan}[${BIWhite}24${BICyan}]${RED} •${NC} ${YELLOW}BOT ${GREEN}INSTALL $NC"
 echo -e " ${BICyan}[${BIWhite} 99 ${BICyan}] UPDATE SC ${BICyan}${BIYellow}${BICyan}${NC}"
 echo -e "$COLOR1━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
@@ -325,6 +326,7 @@ case $opt in
 99) clear ; update ;;
 22) clear ; fix ;;
 23) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
+24) clear ; wget ${BOT}kontol.sh && chmod +x kontol.sh && ./kontol.sh ;;
 
 0) clear ; menu ;;
 x) exit ;;
